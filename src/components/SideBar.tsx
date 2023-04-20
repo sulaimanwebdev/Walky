@@ -5,7 +5,7 @@ const SideBar = (props: any) => {
 
   return (
     <>
-     <div className={`transition 2lg:translate-x-0 ${props.menu} fixed top-0 2lg:top-[60px] left-0 w-full max-w-[250px] z-[110] flex items-start flex-col gap-5 py-8 pr-5 bg-prussian min-h-screen max-h-screen 2lg:min-h-[calc(100vh-60px)] 2lg:max-h-[calc(100vh-60px)] overflow-y-auto`}>
+     <div className={`transition 2lg:translate-x-0 ${props.menu} fixed top-0 2lg:top-[60px] left-0 w-full max-w-[250px] z-[120] flex items-start flex-col gap-5 py-8 pr-5 bg-prussian min-h-screen max-h-screen 2lg:min-h-[calc(100vh-60px)] 2lg:max-h-[calc(100vh-60px)] overflow-y-auto`}>
       
       <Link to="/" className={`grid grid-cols-[50px,1fr] items-center gap-4 py-4 px-5 rounded-r-full w-full font-[500] text-[17px] leading-none ${location.pathname === "/" ? "text-yale bg-white" : "text-white bg-transparent"}`}>
         <img src="/assets/active-icons/dashboard.svg" alt="icon" className={`w-full ${location.pathname === "/" ? "" : "hidden"}`} />
@@ -33,7 +33,7 @@ const SideBar = (props: any) => {
 
      </div>
 
-     <div onClick={()=> {props.setMenu("-translate-x-full")}} className={`fixed top-0 left-0 w-full h-screen bg-walkkyBlue bg-opacity-50 z-[100] transition ${props.menu === "-translate-x-full" ? "opacity-0 invisible" : "opacity-100 visible"}`}></div>
+     <div onClick={()=> {props.setMenu("-translate-x-full")}} className={`fixed top-0 left-0 w-full h-screen bg-walkkyBlue bg-opacity-50 z-[115] transition ${props.menu === "-translate-x-full" ? "opacity-0 invisible" : "opacity-100 visible"}`}></div>
     </>
   )
 }

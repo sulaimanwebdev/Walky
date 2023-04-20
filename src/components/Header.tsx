@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const Header = (props: any) => {
   return (
     <>
-    <div className="customShadow fixed top-0 left-0 w-full flex items-center justify-between gap-3 bg-white py-4 px-5">
+    <div className="customShadow fixed top-0 left-0 z-[100] w-full flex items-center justify-between gap-3 bg-white py-4 px-5">
         <Link to="/"><img src="/assets/logo.svg" alt="logo" className="w-[150px]" /></Link>
         
         <div className="flex items-center gap-4">
