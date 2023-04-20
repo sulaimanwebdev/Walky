@@ -12,7 +12,7 @@ const ContentContainer: React.FC<ContentContainerProps> = ({ children }) => {
 
       <div className="w-full flex">
        <SideBar/>
-       <div className="w-full p-7 ml-[250px]">{children}</div>
+       <div className="w-full p-7 ml-[250px] overflow-x-hidden">{children}</div>
       </div>
      </main>
   );
