@@ -24,7 +24,7 @@ const DataSets = () => {
         </div>
 
 
-        <div className="customShadow bg-white p-5 rounded-xl mt-8 mb-8">
+        <div className="customShadow bg-white p-5 rounded-xl mt-8">
           <div className="font-bold text-[25px] text-[#777777] mb-5">Public</div>
           <Slider/>
         </div>
