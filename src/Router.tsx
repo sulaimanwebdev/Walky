@@ -1,4 +1,5 @@
-import {  Home } from "./pages/Home";
+import { Home } from "./pages/Home";
+import { DataSets } from "./pages/DataSets";
 import { NotFound } from "./pages/NotFound";
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -15,8 +16,8 @@ export const browserRouter = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/home",
-        element: <Home />,
+        path: "/data-sets",
+        element: <DataSets />,
       },
       {
         path: "/test",
