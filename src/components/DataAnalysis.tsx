@@ -50,8 +50,8 @@ const dataAnalysis = () => {
           <div className="font-bold text-[25px] text-[#777777] mb-5">
             Data Analysis
           </div>
-  
-          <div className="grid grid-cols-[120px,1fr,1fr] gap-10">
+          <div className="max-w-full overflow-x-auto">
+          <div className="grid grid-cols-[120px,1fr,1fr] gap-10 min-w-[800px]">
             <div>
               <div className="font-[600] text-[18px] mb-4">Name</div>
               <div className="flex flex-col gap-5">
@@ -100,6 +100,7 @@ const dataAnalysis = () => {
                 ))}
               </div>
             </div>
+          </div>
           </div>
         </div>
       </>

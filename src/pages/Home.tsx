@@ -11,7 +11,7 @@ const Home = () => {
       <ContentContainer>
         <div className="font-bold text-[28px] mb-5">Walkky Data Analysis</div>
 
-        <div className="grid grid-cols-3 gap-7 w-full mb-8">
+        <div className="grid grid-cols-1 3sm:grid-cols-2 md:grid-cols-3 gap-4 3sm:gap-7 w-full mb-8">
           <InsightWidget title="Total Accuracy" value="98%" icon="/assets/i-icon.svg" bg="lightTeal"/>
           <InsightWidget title="Single Beat Accuracy" value="96%" icon="/assets/i-icon.svg" bg="walkkyBlue"/>
         </div>

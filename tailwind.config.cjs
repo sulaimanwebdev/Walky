@@ -18,6 +18,13 @@ module.exports = {
         steel: "#4683B6",
         hospitalGreen: "#1A998E",
         lightTeal: "#2CC3C4",
+      },
+
+      screens:{
+        '3sm': "562px",
+        '2sm': "620px",
+        '2md': "862px",
+        '2lg': "1110px",
       }
     },
   },

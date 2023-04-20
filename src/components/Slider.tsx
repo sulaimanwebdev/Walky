@@ -65,10 +65,10 @@ const Slider = () => {
             0: {
               slidesPerView: 1,
             },
-            465: {
+            620: {
               slidesPerView: 2,
             },
-            689: {
+            862: {
               slidesPerView: 3,
             },
           }}
@@ -120,15 +120,12 @@ const Slider = () => {
             );
           })}
 
-      <div ref={navigationPrevRef} className='whiteGradientLeft z-30 absolute top-1/2 left-0 -translate-y-1/2 flex items-center justify-start w-[80px] h-full cursor-pointer'><svg width="20" height="30" viewBox="0 0 31 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27 42L4.00003 23L27 4" stroke="#4683B6" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
-      <div ref={navigationNextRef} className='whiteGradientRight z-30 absolute top-1/2 right-0 -translate-y-1/2 flex items-center justify-end w-[80px] h-full cursor-pointer'><svg width="20" height="30" viewBox="0 0 31 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4L27 23L4 42" stroke="#4683B6" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
-
+          <div ref={navigationPrevRef} className='whiteGradientLeft z-30 absolute top-1/2 left-0 -translate-y-1/2 hidden 2sm:flex items-center justify-start w-[20px] 2sm:w-[80px] h-full cursor-pointer'><svg width="20" height="30" viewBox="0 0 31 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M27 42L4.00003 23L27 4" stroke="#4683B6" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
+          <div ref={navigationNextRef} className='whiteGradientRight z-30 absolute top-1/2 right-0 -translate-y-1/2 hidden 2sm:flex items-center justify-end w-[20px] 2sm:w-[80px] h-full cursor-pointer'><svg width="20" height="30" viewBox="0 0 31 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4L27 23L4 42" stroke="#4683B6" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
 
         </Swiper>
 
-
         <Link to="/" className='text-walkkyBlue font-bold w-fit float-right mt-14'>See All {`>`}</Link>
-    
     </div>
   )
 }

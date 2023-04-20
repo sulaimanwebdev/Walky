@@ -1,3 +1,4 @@
+import {useState} from "react";
 import Header from "./Header";
 import SideBar from "./SideBar";
 
@@ -6,13 +7,15 @@ interface ContentContainerProps {
 }
 
 const ContentContainer: React.FC<ContentContainerProps> = ({ children }) => {
+  const [menu, setMenu] = useState('-translate-x-full')
+
   return (
     <main className="w-full antialiased mt-[60px]">
-      <Header/>
+      <Header setMenu={setMenu}/>
 
       <div className="w-full flex">
-       <SideBar/>
-       <div className="w-full p-7 ml-[250px] overflow-x-hidden">{children}</div>
+       <SideBar menu={menu} setMenu={setMenu}/>
+       <div className="w-full p-5 2lg:p-7 overflow-x-hidden 2lg:ml-[250px]">{children}</div>
       </div>
      </main>
   );
