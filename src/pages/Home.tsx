@@ -16,7 +16,10 @@ const Home = () => {
           <InsightWidget title="Single Beat Accuracy" value="96%" icon="/assets/i-icon.svg" bg="walkkyBlue"/>
         </div>
  
-        <DataAnalysis/>
+        <div className="customShadow bg-white p-5 rounded-xl">
+          <div className="font-bold text-[25px] text-[#777777] mb-5">Data Analysis</div>
+          <DataAnalysis/>
+        </div>
 
         <div className="customShadow bg-white p-5 rounded-xl mt-8 mb-8">
           <div className="font-bold text-[25px] text-[#777777] mb-1">Data Sets</div>

@@ -46,10 +46,7 @@ const dataAnalysis = () => {
 
     return (
       <>
-        <div className="customShadow bg-white p-5 rounded-xl">
-          <div className="font-bold text-[25px] text-[#777777] mb-5">
-            Data Analysis
-          </div>
+        
           <div className="max-w-full overflow-x-auto">
           <div className="grid grid-cols-[120px,1fr,1fr] gap-10 min-w-[800px]">
             <div>
@@ -102,7 +99,6 @@ const dataAnalysis = () => {
             </div>
           </div>
           </div>
-        </div>
       </>
     );
   };
