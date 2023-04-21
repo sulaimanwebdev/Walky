@@ -13,11 +13,14 @@ const SideBar = (props: any) => {
         <span className="translate-y-[2px] translate-x-[2px]">Dashboard</span>
       </Link>
 
-      <Link to="/data-sets" className={`grid grid-cols-[50px,1fr] items-center gap-4 py-4 px-5 rounded-r-full w-full font-[500] text-[17px] leading-none ${location.pathname === "/data-sets" ? "text-yale bg-white" : "text-white bg-transparent"}`}>
-        <img src="/assets/active-icons/data.svg" alt="icon" className={`w-[35px] ${location.pathname === "/data-sets" ? "" : "hidden"}`} />
-        <img src="/assets/none-active-icons/data.svg" alt="icon" className={`w-[35px] ${location.pathname === "/data-sets" ? "hidden" : ""}`} />
-        <span className="translate-y-[2px] translate-x-[2px]">Data sets</span>
-      </Link>
+      <Link
+            to="/data-sets"
+            className={`grid grid-cols-[50px,1fr] items-center gap-4 py-4 px-5 rounded-r-full w-full font-[500] text-[17px] leading-none ${location.pathname.startsWith('/data-sets') ? "text-yale bg-white" : "text-white bg-transparent"}`}
+          >
+            <img src="/assets/active-icons/data.svg" alt="icon" className={`w-[35px] ${location.pathname.startsWith('/data-sets') ? "" : "hidden"}`} />
+            <img src="/assets/none-active-icons/data.svg" alt="icon" className={`w-[35px] ${location.pathname.startsWith('/data-sets') ? "hidden" : ""}`} />
+            <span className="translate-y-[2px] translate-x-[2px]">Data sets</span>
+          </Link>
 
       <Link to="/diseases" className={`grid grid-cols-[50px,1fr] items-center gap-4 py-4 px-5 rounded-r-full w-full font-[500] text-[17px] leading-none ${location.pathname === "/diseases" ? "text-yale bg-white" : "text-white bg-transparent"}`}>
         <img src="/assets/active-icons/heart.svg" alt="icon" className={`w-[38px] ${location.pathname === "/diseases" ? "" : "hidden"}`} />
