@@ -47,7 +47,7 @@ const DataAnalysis = () => {
     return (
       <>
           <div className="max-w-full overflow-x-auto">
-          <div className="grid grid-cols-[120px,1fr,1fr] gap-10 min-w-[800px]">
+          <div className="grid grid-cols-[80px,1fr,1fr] md:grid-cols-[120px,1fr,1fr] gap-10 min-w-[800px]">
             <div>
               <div className="font-[600] text-[18px] mb-4">Name</div>
               <div className="flex flex-col gap-5">
