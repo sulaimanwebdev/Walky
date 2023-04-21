@@ -1,4 +1,4 @@
-const dataAnalysis = () => {
+const DataAnalysis = () => {
 
     let data = [
         {
@@ -46,7 +46,6 @@ const dataAnalysis = () => {
 
     return (
       <>
-        
           <div className="max-w-full overflow-x-auto">
           <div className="grid grid-cols-[120px,1fr,1fr] gap-10 min-w-[800px]">
             <div>
@@ -103,5 +102,5 @@ const dataAnalysis = () => {
     );
   };
   
-  export default dataAnalysis;
+  export default DataAnalysis;
   

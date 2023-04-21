@@ -25,7 +25,9 @@ const Slider = () => {
         image: "/assets/rambam.png",
         patients: "35,000",
         accuracy: "96%",
-        lastUpdate: "Last updated a week ago"
+        lastUpdate: "Last updated a week ago",
+        link: "/data-sets/rambam"
+
       },
 
       {
@@ -33,7 +35,8 @@ const Slider = () => {
         image: "/assets/mayo.png",
         patients: "35,000",
         accuracy: "98%",
-        lastUpdate: "Last updated a week ago"
+        lastUpdate: "Last updated a week ago",
+        link: "/data-sets/mayo-clinic"
 
       },
 
@@ -42,7 +45,9 @@ const Slider = () => {
         image: "/assets/sheba.png",
         patients: "35,000",
         accuracy: "92%",
-        lastUpdate: "Last updated a week ago"
+        lastUpdate: "Last updated a week ago",
+        link: "/data-sets/sheba"
+
       },
 
       {
@@ -50,7 +55,9 @@ const Slider = () => {
         image: "/assets/rambam.png",
         patients: "35,000",
         accuracy: "96%",
-        lastUpdate: "Last updated a week ago"
+        lastUpdate: "Last updated a week ago",
+        link: "/data-sets/rambam"
+
       },
 
      
@@ -104,7 +111,7 @@ const Slider = () => {
                 key={Math.random()}
                 className='bg-[#F5F5F5] transition rounded-[14px] block overflow-hidden relative py-3 px-4'
               >
-                <Link to="/" className='relative'>
+                <Link to={ele.link} className='relative'>
                 <div className="flex items-start justify-between mb-6">
                   <div className='font-bold text-[23px]'>{ele.title}</div>
                   <img src={ele.image} alt="logo" className='w-[40px] object-cover absolute top-0 right-0' />

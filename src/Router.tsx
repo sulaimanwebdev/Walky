@@ -1,4 +1,4 @@
-import {  Home } from "./pages/Home";
+import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import { Test } from "./pages/Test";
 import { DataSets } from "./pages/DataSets";
+import { Hospital } from "./pages/DataSets/[id]";
 
 export const browserRouter = createBrowserRouter([
   {
@@ -18,6 +19,14 @@ export const browserRouter = createBrowserRouter([
       {
         path: "/data-sets",
         element: <DataSets />,
+      },
+      {
+        path: "/data-sets/:id",
+        element: <Hospital />,
+      },
+      {
+        path: "/data-sets/:id/:subId",
+        element: <Hospital />,
       },
       {
         path: "/test",
