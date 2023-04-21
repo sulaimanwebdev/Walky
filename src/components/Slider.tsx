@@ -56,7 +56,7 @@ const Slider = () => {
      
     ];
 
-    const centeredSlides = data.length >= 3;
+    const centeredSlides = data.length >= 4;
 
   return (
     <div className='relative overflow-hidden'>
@@ -77,7 +77,7 @@ const Slider = () => {
           spaceBetween={25}
           centeredSlides={centeredSlides}
           initialSlide={1}
-          pagination={data.length >= 3 ? { clickable: true } : false}
+          pagination={data.length >= 4 ? { clickable: true } : false}
           navigation={{
             prevEl: navigationPrevRef.current,
             nextEl: navigationNextRef.current,
@@ -122,8 +122,8 @@ const Slider = () => {
           <div ref={navigationNextRef} className='whiteGradientRight z-30 absolute top-1/2 right-0 -translate-y-1/2 hidden 2sm:flex items-center justify-end w-[20px] 2sm:w-[80px] h-full cursor-pointer'><svg width="20" height="30" viewBox="0 0 31 46" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4L27 23L4 42" stroke="#4683B6" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
         </Swiper>
 
-        {data.length >= 3 ? null : <div className="flex items-center justify-center w-fit mx-auto gap-[30px] my-7"><span className="swiper-pagination-bullet"></span><span className="swiper-pagination-bullet"></span><span className="swiper-pagination-bullet"></span><span className="swiper-pagination-bullet"></span></div> }
-        {data.length >= 3 ? <Link to="/" className='text-walkkyBlue font-bold w-fit float-right mt-14'>See All {`>`}</Link> : null}
+        {data.length >= 4 ? null : <div className="flex items-center justify-center w-fit mx-auto gap-[30px] my-7"><span className="swiper-pagination-bullet"></span><span className="swiper-pagination-bullet"></span><span className="swiper-pagination-bullet"></span><span className="swiper-pagination-bullet"></span></div> }
+        {data.length >= 4 ? <Link to="/" className='text-walkkyBlue font-bold w-fit float-right mt-14'>See All {`>`}</Link> : null}
     
     </div>
   )
