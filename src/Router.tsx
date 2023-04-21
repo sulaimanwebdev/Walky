@@ -7,6 +7,7 @@ import App from "./App";
 import { Test } from "./pages/Test";
 import { DataSets } from "./pages/DataSets";
 import { Hospital } from "./pages/DataSets/[id]";
+import { Patient } from "./pages/DataSets/[subId]";
 
 export const browserRouter = createBrowserRouter([
   {
@@ -26,7 +27,7 @@ export const browserRouter = createBrowserRouter([
       },
       {
         path: "/data-sets/:id/:subId",
-        element: <Hospital />,
+        element: <Patient />,
       },
       {
         path: "/test",
