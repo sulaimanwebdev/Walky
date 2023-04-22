@@ -63,8 +63,6 @@ const Slider = () => {
      
     ];
 
-    const centeredSlides = data.length >= 4;
-
   return (
     <div className='relative overflow-hidden'>
       
@@ -82,7 +80,6 @@ const Slider = () => {
           }}
           slidesPerView={3}
           spaceBetween={25}
-          centeredSlides={centeredSlides}
           initialSlide={1}
           pagination={data.length >= 4 ? { clickable: true } : false}
           navigation={{
